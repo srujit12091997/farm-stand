@@ -7,7 +7,7 @@ const methodOverride = require('method-override')
 
 const Product = require('./models/product');
 
-mongoose.connect('mongodb://localhost:27017/farmStand', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://127.0.0.1:27017/farmStand')
     .then(() => {
         console.log("MONGO CONNECTION OPEN!!!")
     })
@@ -15,6 +15,7 @@ mongoose.connect('mongodb://localhost:27017/farmStand', { useNewUrlParser: true,
         console.log("OH NO MONGO CONNECTION ERROR!!!!")
         console.log(err)
     })
+
 
 
 app.set('views', path.join(__dirname, 'views'));
