@@ -78,7 +78,8 @@ This project showcases the integration of:
 
 2. **Install dependencies**
    ```bash
-   npm install
+   npm install  method-override
+   npm install express mongoose ejs
    ```
 
 3. **Start MongoDB service**
